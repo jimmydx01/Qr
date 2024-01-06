@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #ffffff;
+	font-family: 'Helvetica';
+	
+	/*Para no poder seleccionar el texto*/
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+.contenedor {
+	max-width: 90%;
+	width: 400px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.titulo{
+	font-weight: 700;
+	font-size: 30px;
+	color: #1e212a;
+}
+
+.titulo-orange{
+	font-weight: 700;
+	font-size: 30px;
+	color: #FF7D54;
+}
+
+/*Textfiel MaterialDesign*/
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.material-textfield {
+  position: relative;  
+}
+
+label {
+  position: absolute;
+  font-size: 1rem;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: gray;
+  padding: 0 0.3rem;
+  margin: 0 0.5rem;
+  transition: .1s ease-out;
+  transform-origin: left top;
+  pointer-events: none;
+}
+
+input {
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;  
+  padding: 1rem 0.7rem;
+  color: gray;
+  transition: 0.1s ease-out;
+  box-shadow: 10px 10px rgba(248, 237, 233);
+}
+
+input:focus {
+  border-color: #FF7D54;  
+}
+
+input:focus + label {
+  color: #FF7D54;
+  top: 0;
+  transform: translateY(-50%) scale(.9);
+}
+
+input:not(:placeholder-shown) + label {
+  top: 0;
+  transform: translateY(-50%) scale(.9);
+}
+
+/*Boton*/
+.btn{
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 20px;
+	color:#FF7D54;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:8px;
+	padding-right:8PX;
+	background-color:#FFF;
+	border: none;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 12px;
+	box-shadow: 10px 10px rgba(248, 237, 233);
+}
+
+i{
+	outline: none;
+	text-decoration: none;
+	background-color: #FFF;
+	color: #FF7D54;
+	font-size: 22px;
+}
+
+a{
+	outline: none;
+	text-decoration: none;
+	padding: 2px 1px 0;
+	background-color: #FFF;
+}
+
+/*Contenedor*/
+.contenedorQR {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+}
+
+/*Hover btn*/
+.btn:hover{
+	color:#FF7D54;
+	background-color:#FF7D54;
+	box-shadow: 5px 5px rgba(248, 237, 233);
+}
+
+.btn:hover i{
+	background-color: #FF7D54;
+	color: #FFF;
+}
+
+.btn:hover a{
+	background-color: #FF7D54;
+}

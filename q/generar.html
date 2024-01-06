@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nueva Página con Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./estilos.css">
+  <link rel="stylesheet" href="./styles.css">
+
+<!-- qrcode generator-->
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+	<script defer src="script.js"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	</head>
+</head>
+<body>
+
+  <!-- Navy blue stripe with logo -->
+  <div class="container-fluid navy-bg text-center">
+    <img src="./img/logo.png" alt="Logo" class="logo">
+  </div>
+
+  <!-- Orange stripe -->
+  <div class="container-fluid orange-bg text-center py-2">
+  </div>
+
+
+  <div class="contenedor">
+
+			<span class="titulo-orange">QR Code </span><span class="titulo">Generator</span><br><br><br>
+
+			<form action="" id="formulario" class="formulario">
+				<div class="container">
+					<div class="material-textfield">
+					  <input placeholder=" " type="text" id="link">
+					  <label>URL/Text</label>
+					</div>
+				</div>
+			</form>
+
+			<div id="contenedorQR" class="contenedorQR"></div>
+
+			<button class="btn" id="btn-download"></button>
+		</div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>Universidad Estatal de Milagro - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
